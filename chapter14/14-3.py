@@ -19,3 +19,4 @@ print "* "*8
 print "Now I will bounce it"
 myBall.bounce()
 print "Now my ball is", myBall.direction
+print myBall
