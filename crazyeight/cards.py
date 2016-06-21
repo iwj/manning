@@ -44,7 +44,7 @@ class Card:
         else:
             self.suit = "花色错误"
 
-        self.short_name = self.rank[0] + self.suit[0:6]
+        self.short_name = self.suit[0:6] + self.rank[0]
         if self.rank == '10':
-            self.short_name = self.rank + self.suit[0:6]
-        self.long_name = self.rank + " of " + self.suit
+            self.short_name = self.suit[0:6] + self.rank
+        self.long_name = self.suit + " - " + self.rank

@@ -13,6 +13,9 @@ deck = []
 for suit_id in range(1, 5):
     for rank_id in range(1, 14):
         deck.append(Card(suit_id, rank_id))
+        print "正在生成"+deck[-1].short_name
+
+
 # 定义一个手牌
 hand = []
 for cards in range(0, 5):
@@ -20,6 +23,6 @@ for cards in range(0, 5):
     hand.append(a)
     deck.remove(a)
 
-print
+print "缩写\t全称\t分数"
 for card in hand:
     print card.short_name, "=" , card.long_name, " Value:" , card.value
